@@ -6,22 +6,18 @@
 	<style>
         body {
             height: 1000vh;
-            margin: 20px;
+            margin: 50px;
         }
 
-        div {
-            width: 150px;
-            height: 150px;
-            background-color: wheat;
-            position: relative;
+        form {
+            border: 1px solid salmon;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
         }
 
-        span {
-            background-color: tomato;
-        }
-
-        span:nth-child(4n+1) {
-            background-color: teal;
+        form:hover input:focus {
+            background-color: sienna;
         }
 
 	</style>
@@ -29,17 +25,10 @@
 	<meta charset="UTF-8"/>
 </head>
 <body>
-<span>hello</span>
-<span>hello</span>
-<span>hello</span>
-<span>hello</span>
-<span>hello</span>
-<span>hello</span>
-<span>hello</span>
-<span>hello</span>
-<span>hello</span>
-<span>hello</span>
-<span>hello</span>
-<span>hello</span>
+<form>
+	<input type="text">
+	<input type="text">
+	<input type="text">
+</form>
 </body>
 </html>
