@@ -4,31 +4,33 @@
 	<link rel="shortcut icon" sizes="16x16 32x32 64x64" href="https://nomadcoders.co/m.png"/>
 	<title>Home - My first website.</title>
 	<style>
+        :root {
+            --main-color: #fcce00;
+            --default-border: 1px solid var(--main-color)
+        }
+
         body {
             height: 1000vh;
             margin: 50px;
         }
 
-        form {
-            border: 1px solid salmon;
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
+        p {
+            background-color: var(--main-color);
         }
 
-        form:hover input:focus {
-            background-color: sienna;
+        a {
+            color: var(--main-color);
+            border: var(--default-border)
         }
-
 	</style>
 	<meta name="description" content="This is website"/>
 	<meta charset="UTF-8"/>
 </head>
 <body>
-<form>
-	<input type="text">
-	<input type="text">
-	<input type="text">
-</form>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi at corporis cum expedita explicabo fugiat in
+	incidunt modi nam natus, nihil nobis nulla odit rerum saepe sequi, voluptas voluptate.</p>
+<div>
+	<a href="">website</a>
+</div>
 </body>
 </html>
