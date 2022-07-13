@@ -39,3 +39,63 @@
     font-size: 32px;
     color: white;
 }
+
+.reply{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.reply .reply__colum:first-child{
+    width: 10%;
+}
+.reply .reply__colum:last-child{
+    width: 90%;
+    position: relative;
+}
+
+.reply input{
+    padding: 12px;
+    width: 100%;
+    border: var(--main-border);
+    border-radius: 20px;
+}
+
+.reply__colum:last-child > i,
+.reply__colum:last-child button{
+    position: absolute;
+    right: -3px;
+    top: 2px;
+}
+
+.reply__colum:last-child > i{
+    right: 40px;
+    top: 10px;
+}
+
+.reply__colum button{
+    background-color: var(--yellow);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.reply__colum button i{
+    opacity: 1;
+}
+
+.reply__colum button:focus,
+.reply__colum button:active{
+    outline: none;
+}
+
+.reply i{
+    opacity: 0.5;
+}
